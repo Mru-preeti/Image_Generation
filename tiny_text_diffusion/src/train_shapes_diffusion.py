@@ -46,7 +46,7 @@ class TinyUNet(nn.Module):
         super().__init__()
         self.time = nn.Sequential(
             nn.Linear(1, channels), nn.SiLU(),
-            nn.Linear(channels, channels)
+            nn.Linear(channels, channels * 2)
         )
         self.conv1 = nn.Conv2d(3, channels, 3, padding=1)
         self.down = nn.Conv2d(channels, channels * 2, 4, stride=2, padding=1)
