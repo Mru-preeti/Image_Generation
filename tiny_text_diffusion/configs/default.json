@@ -1,0 +1,13 @@
+{
+  "project_name": "tiny_text_diffusion",
+  "seed": 42,
+  "image_size": 32,
+  "dataset_size": 10000,
+  "batch_size": 128,
+  "epochs": 30,
+  "learning_rate": 0.0002,
+  "num_timesteps": 200,
+  "num_classes": 3,
+  "num_colors": 5,
+  "device": "auto"
+}
